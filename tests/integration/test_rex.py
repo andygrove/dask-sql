@@ -239,6 +239,7 @@ def test_like(c, input_table, gpu, request):
 
     assert len(df) == 0
 
+    # Errors due to: https://github.com/dask-contrib/dask-sql/issues/754
     # df = c.sql(
     #     f"""
     #     SELECT * FROM {input_table}
