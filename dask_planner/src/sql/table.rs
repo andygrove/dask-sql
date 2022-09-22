@@ -1,8 +1,9 @@
-use crate::sql::logical;
-use crate::sql::types::rel_data_type::RelDataType;
-use crate::sql::types::rel_data_type_field::RelDataTypeField;
-use crate::sql::types::DaskTypeMap;
-use crate::sql::types::SqlTypeName;
+use crate::sql::{
+    logical,
+    types::{
+        rel_data_type::RelDataType, rel_data_type_field::RelDataTypeField, DaskTypeMap, SqlTypeName,
+    },
+};
 
 use async_trait::async_trait;
 
@@ -14,11 +15,9 @@ use datafusion_sql::TableReference;
 use pyo3::prelude::*;
 
 use datafusion_optimizer::utils::split_conjunction;
-use std::any::Any;
-use std::sync::Arc;
+use std::{any::Any, sync::Arc};
 
-use super::logical::create_table::CreateTablePlanNode;
-use super::logical::predict_model::PredictModelPlanNode;
+use super::logical::{create_table::CreateTablePlanNode, predict_model::PredictModelPlanNode};
 
 /// DaskTable wrapper that is compatible with DataFusion logical query plans
 pub struct DaskTableSource {

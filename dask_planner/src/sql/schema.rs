@@ -1,6 +1,5 @@
 use super::types::PyDataType;
-use crate::sql::function::DaskFunction;
-use crate::sql::table;
+use crate::sql::{function::DaskFunction, table};
 
 use ::std::sync::{Arc, Mutex};
 

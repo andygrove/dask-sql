@@ -1,5 +1,7 @@
-use crate::sql::logical;
-use crate::{expression::PyExpr, sql::exceptions::py_type_err};
+use crate::{
+    expression::PyExpr,
+    sql::{exceptions::py_type_err, logical},
+};
 use datafusion_expr::logical_plan::{Partitioning, Repartition};
 use pyo3::prelude::*;
 

@@ -1,5 +1,4 @@
-use crate::expression::PyExpr;
-use crate::sql::column;
+use crate::{expression::PyExpr, sql::column};
 
 use datafusion_expr::{
     and,

@@ -1,9 +1,7 @@
-use crate::sql::exceptions::py_type_err;
-use crate::sql::logical;
+use crate::sql::{exceptions::py_type_err, logical};
 
 use datafusion_common::{DFSchema, DFSchemaRef};
-use datafusion_expr::logical_plan::UserDefinedLogicalNode;
-use datafusion_expr::{Expr, LogicalPlan};
+use datafusion_expr::{logical_plan::UserDefinedLogicalNode, Expr, LogicalPlan};
 
 use fmt::Debug;
 use std::{any::Any, fmt, sync::Arc};

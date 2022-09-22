@@ -1,5 +1,4 @@
-use crate::sql::exceptions::py_runtime_err;
-use crate::sql::types::rel_data_type_field::RelDataTypeField;
+use crate::sql::{exceptions::py_runtime_err, types::rel_data_type_field::RelDataTypeField};
 
 use std::collections::HashMap;
 

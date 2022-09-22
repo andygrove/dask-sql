@@ -1,6 +1,9 @@
 use crate::expression::{py_expr_list, PyExpr};
 
-use datafusion_expr::{logical_plan::Aggregate, logical_plan::Distinct, Expr, LogicalPlan};
+use datafusion_expr::{
+    logical_plan::{Aggregate, Distinct},
+    Expr, LogicalPlan,
+};
 
 use crate::sql::exceptions::py_type_err;
 use pyo3::prelude::*;

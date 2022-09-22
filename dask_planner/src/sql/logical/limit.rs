@@ -1,5 +1,4 @@
-use crate::expression::PyExpr;
-use crate::sql::exceptions::py_type_err;
+use crate::{expression::PyExpr, sql::exceptions::py_type_err};
 
 use datafusion_common::ScalarValue;
 use pyo3::prelude::*;

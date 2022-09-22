@@ -64,18 +64,18 @@
 //!        TableScan: a
 
 use datafusion_common::{Column, DFSchema, Result};
-use datafusion_expr::logical_plan::Projection;
-use datafusion_expr::utils::exprlist_to_fields;
 use datafusion_expr::{
     col, count,
-    logical_plan::{Aggregate, LogicalPlan},
+    logical_plan::{Aggregate, LogicalPlan, Projection},
+    utils::exprlist_to_fields,
     AggregateFunction, Expr, LogicalPlanBuilder,
 };
 use datafusion_optimizer::{utils, OptimizerConfig, OptimizerRule};
 use log::trace;
-use std::collections::hash_map::HashMap;
-use std::collections::HashSet;
-use std::sync::Arc;
+use std::{
+    collections::{hash_map::HashMap, HashSet},
+    sync::Arc,
+};
 
 /// Optimizer rule eliminating/moving Aggregate Expr(s) with a `DISTINCT` inner Expr.
 #[derive(Default)]

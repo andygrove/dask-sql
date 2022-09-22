@@ -1,5 +1,4 @@
-use crate::sql::exceptions::py_type_err;
-use crate::sql::logical;
+use crate::sql::{exceptions::py_type_err, logical};
 use datafusion_expr::logical_plan::TableScan;
 use pyo3::prelude::*;
 

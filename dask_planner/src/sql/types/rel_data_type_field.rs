@@ -1,5 +1,4 @@
-use crate::sql::types::DaskTypeMap;
-use crate::sql::types::SqlTypeName;
+use crate::sql::types::{DaskTypeMap, SqlTypeName};
 
 use datafusion_common::{DFField, DFSchema, Result};
 
