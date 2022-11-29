@@ -10,7 +10,7 @@ rust-version = "1.62"
 
 [dependencies]
 arrow = { version = "25.0.0", features = ["prettyprint"] }
-async-trait = "0.1.58"
+async-trait = "0.1.59"
 datafusion-common = { git = "https://github.com/apache/arrow-datafusion/", rev = "54d2870a56d8d8f914a617a7e2d52e387ef5dba2" }
 datafusion-expr = { git = "https://github.com/apache/arrow-datafusion/", rev = "54d2870a56d8d8f914a617a7e2d52e387ef5dba2" }
 datafusion-optimizer = { git = "https://github.com/apache/arrow-datafusion/", rev = "54d2870a56d8d8f914a617a7e2d52e387ef5dba2" }
